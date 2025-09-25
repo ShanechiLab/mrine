@@ -1,0 +1,11 @@
+--find-links https://download.pytorch.org/whl/torch_stable.html
+matplotlib==3.5.1
+numpy==1.19.5
+scikit_learn==1.0.2
+scipy==1.5.4
+torch==2.1.2+cu118
+tensorboard
+tabulate==0.8.9
+torchmetrics==0.8.0
+tqdm==4.62.3
+yacs==0.1.6

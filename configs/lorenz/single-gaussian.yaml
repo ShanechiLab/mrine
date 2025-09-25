@@ -1,0 +1,59 @@
+device: cpu
+load:
+  file_name: ''
+  resume_train: false
+loss:
+  scale_l2: 0.0001
+  scale_sm_reg_s: 250
+  scale_sm_reg_x: 30
+  scale_sm_reg_y: 50
+  steps_ahead:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  tau: 1
+lr:
+  base_lr: 0.001
+  gamma: 0.99
+  init_lr: 0.01
+  max_lr: 0.01
+  mode: exp_range
+  step_size_up: 10
+model:
+  activation: tanh
+  dropout_rate: 0.4
+  init_A_scale: 0.9
+  init_C_scale: 0.9
+  init_Q_scale: 0.5
+  init_R_scale: 1
+  init_cov_scale: 1
+  kernel_initializer: xavier_normal
+  layer_list_m:
+  - 128
+  layer_list_s:
+  - 128
+  - 128
+  - 128
+  layer_list_y:
+  - 128
+  - 128
+  - 128
+  learn_y_var: false
+  likelihood_s: poisson
+  likelihood_y: gaussian
+  model_type: single-gaussian
+  n_a: 32
+  n_x: 32
+  save_dir: ./results/lorenz/single-gaussian/
+  save_steps: 100
+  td_rate: 0.3
+  y_var: 1
+optim:
+  grad_clip: 0.1
+train:
+  batch_size: 32
+  num_epochs: 200
+  plot_save_steps: 50
+  valid_step: 1
