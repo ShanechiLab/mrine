@@ -17,3 +17,14 @@ To run MRINE on stochastic Lorenz simulations and the NHP dataset, please run ru
 The arguments and their definitions are provided in the scripts. The scripts load the default configs by default. To see the definitions of hyperparameters, 
 please see model/config.py.
 
+For further details, please see our manuscript.
+
+## Publication:
+[Erturk, E., Shanechi, M. M. Dynamical modeling of nonlinear latent factors in multiscale neural activity with real-time inference. In Advances in Neural Information Processing Systems 2025.](https://openreview.net/forum?id=jOHgjZaGqd)
+
+## Licence:
+Copyright (c) 2025 University of Southern California <br />
+See full notice in [LICENSE.md](https://github.com/ShanechiLab/mrine/blob/master/LICENSE.md) <br />
+Eray Erturk and Maryam M. Shanechi <br />
+Shanechi Lab, University of Southern California <br />
+
